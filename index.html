@@ -5,9 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- add the inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        font-family: "Inter";
+      }
+    </style>
   </head>
-  <body>
+  <body class="flex flex-col items-center justify-center font-inter">
     <!-- container -->
-    <div class="container"></div>
+    <div
+      class="container px-4 pb-8 my-6 w-[225px] h-[500px] rounded-[20px] bg-white shadow-md shadow-black flex flex-col"
+    >
+      <!-- upper- calc screen -->
+      <div class="w-full h-2/5 upper flex flex-col justify-end gap-5">
+        <div class="div">
+          <input
+            type="text"
+            class="w-full text-right font-inter text-black text-2xl font-semibold"
+            value="17*64"
+            id="input-field"
+          />
+        </div>
+        <div class="">
+          <h5 id="result" class="text-right text-[#00B1D8] text-xl font-semibold">1088</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <!-- clock -->
+          <button>
+            <img src="./images/clock.png" alt="" />
+          </button>
+
+          <!-- arrow -->
+          <button>
+            <img src="./images/arrow.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <!-- lower - calc body -->
+      <div class="calc-body w-full h-3/5 pt-2 grid grid-cols-4 gap-4">
+        
+      </div>
+    </div>
+    <!-- add js -->
+     <script src="./js/main.js"></script>
   </body>
 </html>
